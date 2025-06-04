@@ -1,0 +1,12 @@
+# Ignore model checkpoints and large files
+*.zip
+*.pt
+*.safetensors
+*.bin
+*.pth
+*.jsonl
+wandb/
+legal-flan-model/
+__pycache__/
+*.pyc
+*.ipynb_checkpoints/

@@ -1,0 +1,21 @@
+# Web scraping
+requests
+beautifulsoup4
+
+# Dataset handling and transformation
+datasets
+pandas
+
+# Model training and tokenization
+transformers
+trl
+accelerate
+bitsandbytes
+
+# Optional: logging/tracking
+wandb
+
+# For Mac M1 compatibility (optional use CPU)
+torch==2.1.0
+torchvision==0.16.0
+torchaudio==2.1.0
