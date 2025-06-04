@@ -1,12 +1,17 @@
-# Ignore model checkpoints and large files
-*.zip
-*.pt
-*.safetensors
-*.bin
-*.pth
-*.jsonl
-wandb/
-legal-flan-model/
+# .gitignore
+
+# virtualenv and cache
+myenv/
 __pycache__/
 *.pyc
+
+# large model/checkpoint/log files
+*.pt
+*.bin
+*.safetensors
+*.zip
+*.dylib
+wandb/
+training/legal-flan-model/
+legal-flan-model/
 *.ipynb_checkpoints/
