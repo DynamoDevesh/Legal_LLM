@@ -1,0 +1,72 @@
+[
+  {
+    "question": "What is the title and extent of operation of the Indian Penal Code?",
+    "prompt": "You are a legal advisor.\n\nUse the following legal context to answer the question:\n\n- SEC_467: Imprisonment for 3 years, or fine, or both....\n- SEC_376: These sections are mentioned in the Indian Penal Code....\n- SEC_345: The Court may forward the case to a Magistrate having jurisdiction to try the same, and may require security to be given for the appearance of such person before such Magistrate....\n\nQuestion: What is the title and extent of operation of the Indian Penal Code?\nAnswer:",
+    "generated_answer": "SEC_376",
+    "rating": 1,
+    "comment": ""
+  },
+  {
+    "question": "Where does the operation of 'The Indian Penal Code' extend to, and does it include extra-territorial offences?",
+    "prompt": "You are a legal advisor.\n\nUse the following legal context to answer the question:\n\n- SEC_376: These sections are mentioned in the Indian Penal Code....\n- SEC_467: Imprisonment for 3 years, or fine, or both....\n- SEC_345: The Court may forward the case to a Magistrate having jurisdiction to try the same, and may require security to be given for the appearance of such person before such Magistrate....\n\nQuestion: Where does the operation of 'The Indian Penal Code' extend to, and does it include extra-territorial offences?\nAnswer:",
+    "generated_answer": "no",
+    "rating": 1,
+    "comment": ""
+  },
+  {
+    "question": "What does the Indian Penal Code stipulate about certain laws?",
+    "prompt": "You are a legal advisor.\n\nUse the following legal context to answer the question:\n\n- SEC_467: Imprisonment for 3 years, or fine, or both....\n- SEC_376: These sections are mentioned in the Indian Penal Code....\n- SEC_345: The Court may forward the case to a Magistrate having jurisdiction to try the same, and may require security to be given for the appearance of such person before such Magistrate....\n\nQuestion: What does the Indian Penal Code stipulate about certain laws?\nAnswer:",
+    "generated_answer": "SEC_376",
+    "rating": 1,
+    "comment": ""
+  },
+  {
+    "question": "What does the Indian Penal Code say about the impact of this Act on certain laws?",
+    "prompt": "You are a legal advisor.\n\nUse the following legal context to answer the question:\n\n- SEC_467: Imprisonment for 3 years, or fine, or both....\n- SEC_376: These sections are mentioned in the Indian Penal Code....\n- SEC_345: The Court may forward the case to a Magistrate having jurisdiction to try the same, and may require security to be given for the appearance of such person before such Magistrate....\n\nQuestion: What does the Indian Penal Code say about the impact of this Act on certain laws?\nAnswer:",
+    "generated_answer": "SEC_376",
+    "rating": 1,
+    "comment": ""
+  },
+  {
+    "question": "What is 'Man', 'Woman', 'Person', and 'Public' according to the Indian Penal Code?",
+    "prompt": "You are a legal advisor.\n\nUse the following legal context to answer the question:\n\n- SEC_167: The Chief Minister communicates all decisions of the Council of Ministers relating to the administration of the affairs of the State and proposals for legislation to the Governor. The Chief Minister furnishes such information relating to the administration of the affairs of the State and proposals for legislation as the Governor may call for. If the Governor requires, the Chief Minister submits fo...\n- SEC_24: No, the description of Section 24 of the Indian Evidence Act, 1872 is not provided in the given text....\n- SEC_376: These sections are mentioned in the Indian Penal Code....\n\nQuestion: What is 'Man', 'Woman', 'Person', and 'Public' according to the Indian Penal Code?\nAnswer:",
+    "generated_answer": "Person",
+    "rating": 1,
+    "comment": ""
+  },
+  {
+    "question": "Where are the terms 'Man', 'Woman', 'Person', and 'Public' defined in the Indian Penal Code?",
+    "prompt": "You are a legal advisor.\n\nUse the following legal context to answer the question:\n\n- SEC_376: These sections are mentioned in the Indian Penal Code....\n- SEC_24: No, the description of Section 24 of the Indian Evidence Act, 1872 is not provided in the given text....\n- SEC_467: Imprisonment for 3 years, or fine, or both....\n\nQuestion: Where are the terms 'Man', 'Woman', 'Person', and 'Public' defined in the Indian Penal Code?\nAnswer:",
+    "generated_answer": "SEC_376",
+    "rating": 1,
+    "comment": ""
+  },
+  {
+    "question": "What is the definition of 'Wrongful gain', 'Wrongful loss', 'Dishonestly', and 'Fraudulently' in the Indian Penal Code?",
+    "prompt": "You are a legal advisor.\n\nUse the following legal context to answer the question:\n\n- SEC_467: Imprisonment for 3 years, or fine, or both....\n- SEC_376: These sections are mentioned in the Indian Penal Code....\n- SEC_345: The Court may forward the case to a Magistrate having jurisdiction to try the same, and may require security to be given for the appearance of such person before such Magistrate....\n\nQuestion: What is the definition of 'Wrongful gain', 'Wrongful loss', 'Dishonestly', and 'Fraudulently' in the Indian Penal Code?\nAnswer:",
+    "generated_answer": "SEC_376",
+    "rating": 1,
+    "comment": ""
+  },
+  {
+    "question": "Where in the Indian Penal Code are the terms 'Wrongful gain', 'Wrongful loss', 'Dishonestly', and 'Fraudulently' defined?",
+    "prompt": "You are a legal advisor.\n\nUse the following legal context to answer the question:\n\n- SEC_467: Imprisonment for 3 years, or fine, or both....\n- SEC_376: These sections are mentioned in the Indian Penal Code....\n- SEC_345: The Court may forward the case to a Magistrate having jurisdiction to try the same, and may require security to be given for the appearance of such person before such Magistrate....\n\nQuestion: Where in the Indian Penal Code are the terms 'Wrongful gain', 'Wrongful loss', 'Dishonestly', and 'Fraudulently' defined?\nAnswer:",
+    "generated_answer": "SEC_376",
+    "rating": 1,
+    "comment": ""
+  },
+  {
+    "question": "What are the types of punishments stipulated in the Indian Penal Code?",
+    "prompt": "You are a legal advisor.\n\nUse the following legal context to answer the question:\n\n- SEC_467: Imprisonment for 3 years, or fine, or both....\n- SEC_376: These sections are mentioned in the Indian Penal Code....\n- SEC_345: The Court may forward the case to a Magistrate having jurisdiction to try the same, and may require security to be given for the appearance of such person before such Magistrate....\n\nQuestion: What are the types of punishments stipulated in the Indian Penal Code?\nAnswer:",
+    "generated_answer": "Imprisonment for 3 years, or fine, or both....",
+    "rating": 3,
+    "comment": ""
+  },
+  {
+    "question": "In which chapter of the Indian Penal Code are the types of punishments mentioned?",
+    "prompt": "You are a legal advisor.\n\nUse the following legal context to answer the question:\n\n- SEC_467: Imprisonment for 3 years, or fine, or both....\n- SEC_376: These sections are mentioned in the Indian Penal Code....\n- SEC_345: The Court may forward the case to a Magistrate having jurisdiction to try the same, and may require security to be given for the appearance of such person before such Magistrate....\n\nQuestion: In which chapter of the Indian Penal Code are the types of punishments mentioned?\nAnswer:",
+    "generated_answer": "SEC_376",
+    "rating": 2,
+    "comment": ""
+  }
+]
