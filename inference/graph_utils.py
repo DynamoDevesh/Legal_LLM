@@ -27,65 +27,53 @@ def embed_query(query):
 # === 3. Run RL-based traversal to get path nodes ===
 def run_rl_agent_traversal(G, node_embeddings, user_query):
     state_dim = 768
-    action_dim = max([len(list(G.successors(n))) for n in G.nodes if len(list(G.successors(n))) > 0], default=25)
+    #action_dim = max([len(list(G.neighbors(n))) for n in G.nodes if len(list(G.neighbors(n))) > 0], default=25)
+    action_dim =25
     print(f"📏 RL Agent Config → state_dim={state_dim}, action_dim={action_dim}")
 
-
-    
     agent = DQNAgent(state_dim, action_dim)
     model_path = os.path.join(os.path.dirname(__file__), "dqn_legal_model.pt")
     agent.q_net.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
-
     agent.q_net.eval()
 
     query_emb = embed_query(user_query)
     query_emb = query_emb.cpu().numpy() if hasattr(query_emb, "cpu") else query_emb
     node_embeddings = {k: v.cpu().numpy() if hasattr(v, "cpu") else v for k, v in node_embeddings.items()}
-    
-    legal_nodes = [n for n in G.nodes if G.nodes[n].get("type") == "section"]
+
+    # Keep only nodes that exist in both graph and embeddings
+    legal_nodes = list(set(G.nodes).intersection(set(node_embeddings.keys())))
+    node_embeddings = {k: v for k, v in node_embeddings.items() if k in G.nodes}
+
     print(f"🔍 Total nodes in G: {len(G.nodes)}")
-    print(f"🔍 Total nodes in node_embeddings: {len(node_embeddings)}")
-
-    # List some missing ones
-    missing = [n for n in G.nodes if n not in node_embeddings]
-    print(f"❌ Nodes missing embeddings: {len(missing)}")
-    print("🔹 Sample missing nodes:", missing[:5])
-
-    legal_nodes = [n for n in G.nodes if n in node_embeddings]
     print(f"✅ Legal nodes with embeddings: {len(legal_nodes)}")
 
     if not legal_nodes:
         raise ValueError("🚨 No nodes found with embeddings. Check your graph or embedding loading.")
 
     from sklearn.metrics.pairwise import cosine_similarity
-
     query_vec = query_emb.reshape(1, -1)
     node_keys = list(node_embeddings.keys())
     node_vecs = np.array([node_embeddings[k] for k in node_keys])
-
     sims = cosine_similarity(query_vec, node_vecs)[0]
     ranked_nodes = [node_keys[i] for i in sims.argsort()[::-1]]
 
     # Use top node as start point
     query_node = ranked_nodes[0]
-
-
-    
     path = [query_node]
     current = query_node
+
     for _ in range(5):
         state = node_embeddings[current]
         legal_actions = list(G.neighbors(current))
-        
+
         if not legal_actions:
-            return path  # ✅ return traversed path safely
+            break
 
         next_idx = agent.select_action(state, legal_actions)
-
-        successors = list(G.successors(current))
-        if not successors or next_idx >= len(successors):
+        if next_idx >= len(legal_actions):
             break
-        current = successors[next_idx]
+
+        current = legal_actions[next_idx]
         path.append(current)
 
     return path

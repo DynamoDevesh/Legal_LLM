@@ -13,7 +13,7 @@ from graph_utils import (
 user_query = input("📝 Enter your legal question: ")
 
 # === 2. Load graph and RL agent ===
-G, node_embeddings = load_graph_with_embeddings("legal_kg_curated_large.gpickle", "node_embeddings.pkl")
+G, node_embeddings = load_graph_with_embeddings("/Users/dynamodevesh/Desktop/Legal_Bot/Legal_LLM/inference/legal_kg_curated_large.gpickle", "node_embeddings.pkl")
 path_nodes = run_rl_agent_traversal(G, node_embeddings, user_query)
 
 # === 3. Build dynamic prompt ===
